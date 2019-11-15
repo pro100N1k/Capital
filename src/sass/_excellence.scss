@@ -1,0 +1,85 @@
+.excellence {
+  padding: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &-section {
+    padding: 10rem 0 0;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    width: calc((100% / 3) - 1.5rem);
+    position: relative;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #eaeaea;
+    @media all and (max-width: 420px) {
+      margin: 0 auto 10rem;
+      width: calc(100% - 10rem);
+    }
+    @media all and (max-width: 767px) {
+      width:calc((100% / 2) - 2rem);
+    }
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 14.2rem;
+      height: 14.2rem;
+      border-radius: 50%;
+      box-shadow: 0 0.3rem 1.2rem rgba(28, 27, 106, 0.1);
+      background-color: #ffffff;
+      & img {
+        width: 8.5rem;
+        height: 8.5rem;
+      }
+    }
+    &__text {
+      padding: 10rem 7rem 4rem;
+      color: #313131;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &-question {
+      margin-bottom: 3rem;
+      width: 20rem;
+      color: #313131;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &__phone {
+      text-align: center;
+      width: 100%;
+      color: #313131;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 3.5rem;
+      text-transform: uppercase;
+      & i {
+        margin-right: 1rem;
+        color: #ffaa22;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+    &:last-of-type {
+      padding: 4rem;
+      flex-wrap: wrap;
+      border: 0.1rem solid #eaeaea;
+      background-image: linear-gradient(to right, #ffe213 0%, #ffa722 100%);
+    }
+  }
+}

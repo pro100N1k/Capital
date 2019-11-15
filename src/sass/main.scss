@@ -1,0 +1,32 @@
+// UTILS
+@import "reset";
+@import "mixins";
+
+// LIBS
+@import "libs/bootstrap-grid";
+@import '../../node_modules/slick-carousel/slick/slick-theme.css';
+@import '../../node_modules/slick-carousel/slick/slick.css';
+@import '../../node_modules/select2/dist/css/select2.min.css';
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css';
+
+// BASE
+@import "fonts";
+@import "base";
+
+// COMPONENTS
+@import "buttons";
+@import "header";
+@import "footer";
+
+// Screens
+@import "home";
+@import "plan";
+@import "story";
+@import "path";
+@import "calculate.scss";
+@import "excellence";
+@import "prediction";
+@import "cooperation";
+@import "roadmap";
+@import "deposits";
+@import "news";

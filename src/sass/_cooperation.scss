@@ -1,0 +1,94 @@
+.cooperation {
+  &-section {
+    padding: 10rem 0;
+    position: relative;
+    overflow: hidden;
+    .data-section-title {
+      position: absolute;
+      left: -10rem;
+      top: 45%;
+      transform: rotate(-90deg) translateY(-50%);
+      @media all and (max-width: 1800px) {
+        left: -18rem;
+        font-size: 12rem;
+      }
+    }
+    .section-bg--right {
+      top: 50%;
+      transform: translate(50%,-50%);
+      right: 0;
+    }
+  }
+  &-item {
+    margin-bottom: 1rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &-title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 3.7rem 6.5rem;
+      box-shadow: 0 0.3rem 1.2rem rgba(28, 27, 106, 0.05);
+      border-radius: 0.5rem;
+      border: 0.1rem solid #e0eaee;
+      background-color: #ffffff;
+      cursor: pointer;
+      &__counter {
+        position: relative;
+        &:before {
+          counter-increment: counter;
+          content: counter(counter,decimal-leading-zero)".";
+          display: block;
+          margin-right: 2rem;
+          font-size: 4rem;
+          text-transform: uppercase;
+          background-image: linear-gradient(to right,#ffe10d 0,#ffa522 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: #ffa620;
+          font-weight: 700;
+        }
+      }
+      &__text {
+        max-width:42rem;
+        color: #313131;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      &__icon {
+        position: absolute;
+        top: 50%;
+        right: 6.5rem;
+        transform: translateY(-50%);
+        color: #313131;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3.5rem;
+        text-transform: uppercase;
+      }
+      &-active {
+        .cooperation-item-title__icon {
+          color: #ffa620;
+        }
+      }
+    }
+    &-text {
+      padding: 5rem 6.5rem;
+      border-radius: 0.5rem;
+      border: 0.1rem solid #f0f0f0;
+      background-color: #fafafa;
+      & p {
+        margin-bottom: 1.5rem;
+        color: #5f5f5f;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

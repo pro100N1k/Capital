@@ -1,0 +1,104 @@
+.plan {
+  &-section {
+    margin-top: -15rem;
+    position: relative;
+    z-index: 10;
+    @media all and (max-width: 767px) {
+      margin-top: -10rem;
+    }
+  }
+  &-card {
+    padding: 4rem 5rem;
+    width:calc((100% / 3) - 3rem);
+    box-shadow: 0 0.3rem 1.2rem rgba(28, 27, 106, 0.1);
+    border-radius: 2rem;
+    border: 0.1rem solid #e0eaee;
+    background-color: #ffffff;
+    text-align: center;
+    @media all and (max-width: 350px) {
+      width: calc(100% - 5rem);
+      margin: 0 auto 3rem;
+    }
+    @media all and (min-width: 351px)  and (max-width: 599px) {
+      width: calc(100% - 10rem);
+      margin: 0 auto 3rem;
+    }
+    @media all and (min-width: 600px) and (max-width: 767px) {
+      padding: 4rem 2rem;
+      width:calc((100% / 3) - 1rem);
+    }
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media all and (max-width: 600px) {
+        flex-wrap: wrap;
+      }
+    }
+    &__title {
+      margin-bottom: 3rem;
+      color: #313131;
+      font-family: "Gotham Pro";
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &-img {
+      margin: 0 auto 4rem;
+      width: 14rem;
+      height: 14rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(to bottom, rgba(#2d2674,0.05) 0%, rgba(45, 38, 116, 0) 100%);
+      border-radius: 50%;
+      & img {
+        width: 8.5rem;
+        height: 8.5rem;
+      }
+    }
+    &-info {
+      &__price {
+        position: relative;
+        display: inline-block;
+        &-wrapper {
+          margin-bottom: 1.5rem;
+          text-align: center;
+        }
+        &-percent {
+          position: absolute;
+          top: 0;
+          left: -1.5rem;
+          color: #313131;
+          font-size: 2rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        &-value {
+          color: #313131;
+          font-size: 1.4rem;
+          font-weight: 400;
+          & strong {
+            color: #313131;
+            font-size: 7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 5rem;
+          }
+        }
+      }
+      &__text {
+        margin-bottom: 3rem;
+        color: #313131;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2rem;
+      }
+      &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

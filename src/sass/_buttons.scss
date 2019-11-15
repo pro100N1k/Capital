@@ -1,0 +1,51 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  width: 25rem;
+  outline: none;
+  box-shadow: 0 0.3rem 1.7rem rgba(201, 123, 6, 0.15);
+  border-radius: 3rem;
+  background-image: linear-gradient(to right, #ffe30c 0%, #ffa422 100%);
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    box-shadow: 0 0.3rem 1.7rem rgba(201, 123, 6, 0.2);
+    border-radius: 3rem;
+    background-image: linear-gradient(to left, #ffe30c 0%, #ffa422 100%);
+  }
+  &:active {
+    box-shadow: 0 0.3rem 1.7rem rgba(201, 123, 6, 0.15);
+    border-radius: 3rem;
+    background-color: #ffa722;
+    background-image:none;
+  }
+  &--header {
+    border: 0.1rem solid #ffc01a;
+    border-radius: 3rem;
+    background-image: none;
+    width: auto;
+    height: auto;
+  }
+  &--border {
+    border: 0.1rem solid #ffc01a;
+    border-radius: 3rem;
+    background-image: none;
+    width: 25rem;
+    height: 6rem;
+    color: #ffab20;;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
